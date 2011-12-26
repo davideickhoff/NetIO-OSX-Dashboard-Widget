@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#render_area {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: block;
+    width: 320px;
+    height: 460px;
+    top: 0px;
+    left: 0px;
+    background-color:#eee;
+    position: relative;
+}
+
+#hover {
+    opacity: 0.8;
+    background-color: #ffb;
+    border: 1px solid #666;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    z-index : 200;
+}
+
+#detail_table, td {
+    border : 1px solid #555;
+    padding: 5px;
+}
+
+.detail_table {
+    width: 100px;
+}
+
+.background_image {
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 320px;
+    height: 460px;
+}
+
+
+.page_button {
+    height: 62px;
+    width: 62px;
+    position: absolute;
+    /*background-color: #ccc;*/
+}
+
+.page_button_background
+{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 62px;
+    width: 62px;
+}
+
+.page_button_label {
+    position:absolute;
+    height: 62px;
+    width: 62px;
+    top: 0px;
+    left: 0px;
+    line-height : 62px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.page {
+    position: absolute;
+    top: 67px;
+    left:0px;
+    width: 320px;
+    height: 373px;
+}
+
+.button {
+    position: absolute;
+    text-align: center;
+    /*border : 1px solid #aaa; */
+}
+
+.button_bg_image {
+    position: absolute;
+    border : 0;
+    top:0px;
+    left:0px;
+}
+
+.button_icon_image {
+    position:relative;
+}
+
+.button_label {
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

@@ -1,0 +1,1250 @@
+{
+    "type": "NetIOConfiguration",
+    "version": 1.2,
+    "connections": [
+        {
+            "name": "pc",
+            "ip": "192.168.0.91",
+            "port": 54321
+        },
+        {
+            "name": "board",
+            "ip": "192.168.0.90",
+            "port": 2701
+        }
+    ],
+    "configuration_iphone": [
+        {
+            "name": "Steckdose",
+            "label": "Raum",
+            "connection": "board",
+            "buttons": [
+                {
+                    "width": 90,
+                    "height": 46,
+                    "top": 30,
+                    "left": 20,
+                    "shape": "rounded",
+                    "icon": "lamp_on",
+                    "label": "",
+                    "sends": [
+                        "rfm12 2272 0,5,81 76 3"
+                    ],
+                    "connection": "pc"
+                },
+                {
+                    "width": 90,
+                    "height": 46,
+                    "top": 30,
+                    "left": 210,
+                    "shape": "rounded",
+                    "icon": "lamp_off",
+                    "label": "",
+                    "sends": [
+                        "rfm12 2272 0,5,80 76 3"
+                    ],
+                    "connection": "pc"
+                },
+                {
+                    "width": 90,
+                    "height": 46,
+                    "top": 95,
+                    "left": 20,
+                    "shape": "rounded",
+                    "icon": "lamp_on",
+                    "label": "",
+                    "sends": [
+                        "rfm12 2272 0,17,81 76 3"
+                    ]
+                },
+                {
+                    "width": 90,
+                    "height": 46,
+                    "top": 95,
+                    "left": 210,
+                    "shape": "rounded",
+                    "icon": "lamp_off",
+                    "label": "",
+                    "sends": [
+                        "rfm12 2272 0,17,80 76 3"
+                    ]
+                },
+                {
+                    "width": 90,
+                    "height": 46,
+                    "top": 160,
+                    "left": 20,
+                    "shape": "rounded",
+                    "icon": "lamp_on",
+                    "label": "",
+                    "sends": [
+                        "rfm12 2272 0,20,81 76 3"
+                    ]
+                },
+                {
+                    "width": 90,
+                    "height": 46,
+                    "top": 160,
+                    "left": 210,
+                    "shape": "rounded",
+                    "icon": "lamp_off",
+                    "label": "",
+                    "sends": [
+                        "rfm12 2272 0,20,80 76 3"
+                    ]
+                },
+                {
+                    "width": 90,
+                    "height": 46,
+                    "top": 225,
+                    "left": 20,
+                    "shape": "rounded",
+                    "icon": "lamp_on",
+                    "label": "",
+                    "sends": [
+                        "rfm12 2272 0,21,17 76 3"
+                    ]
+                },
+                {
+                    "width": 90,
+                    "height": 46,
+                    "top": 225,
+                    "left": 210,
+                    "shape": "rounded",
+                    "icon": "lamp_off",
+                    "label": "",
+                    "sends": [
+                        "rfm12 2272 0,21,16 76 3"
+                    ]
+                },
+                {
+                    "width": 130,
+                    "height": 46,
+                    "top": 290,
+                    "left": 20,
+                    "shape": "rounded",
+                    "icon": "",
+                    "label": "All On",
+                    "sends": [
+                        "rfm12 2272 0,5,81 76 3",
+                        "rfm12 2272 0,17,81 76 3",
+                        "rfm12 2272 0,20,81 76 3",
+                        "rfm12 2272 0,21,17 76 3"
+                    ]
+                },
+                {
+                    "width": 130,
+                    "height": 46,
+                    "top": 290,
+                    "left": 170,
+                    "shape": "rounded",
+                    "icon": "",
+                    "label": "All Off",
+                    "sends": [
+                        "rfm12 2272 0,5,80 76 3",
+                        "rfm12 2272 0,17,80 76 3",
+                        "rfm12 2272 0,20,80 76 3",
+                        "rfm12 2272 0,21,16 76 3"
+                    ]
+                },
+                {
+                    "width": 40,
+                    "height": 40,
+                    "top": 345,
+                    "left": 215,
+                    "shape": "circle",
+                    "icon": "",
+                    "label": "on",
+                    "sends": [
+                        "lcd backlight on"
+                    ]
+                },
+                {
+                    "width": 40,
+                    "height": 40,
+                    "top": 345,
+                    "left": 260,
+                    "shape": "circle",
+                    "icon": "",
+                    "label": "off",
+                    "sends": [
+                        "lcd backlight off"
+                    ]
+                },
+                {
+                    "width": 170,
+                    "height": 30,
+                    "top": 350,
+                    "left": 20,
+                    "shape": "rounded",
+                    "icon": "",
+                    "label": "Temperature",
+                    "sends": [
+                        "1w convert"
+                    ],
+                    "reads": "1w get 10c3e6db01080033"
+                }
+            ],
+            "labels": [
+                {
+                    "width": 100,
+                    "height": 30,
+                    "top": 45,
+                    "left": 110,
+                    "text": "Couch",
+                    "icon": "",
+                    "sends": [
+                        "test"
+                    ]
+                },
+                {
+                    "width": 100,
+                    "height": 30,
+                    "top": 110,
+                    "left": 110,
+                    "text": "Fluter",
+                    "icon": ""
+                },
+                {
+                    "width": 100,
+                    "height": 30,
+                    "top": 175,
+                    "left": 110,
+                    "text": "Bar",
+                    "icon": ""
+                },
+                {
+                    "width": 100,
+                    "height": 30,
+                    "top": 240,
+                    "left": 110,
+                    "text": "Neon",
+                    "icon": ""
+                }
+            ]
+        },
+        {
+            "name": "Yamaha Receiver",
+            "label": "Amp",
+            "connection": "board",
+            "buttons": [
+                {
+                    "width": 70,
+                    "height": 50,
+                    "left": 10,
+                    "top": 20,
+                    "shape": "rounded",
+                    "icon": "",
+                    "label": "On",
+                    "sends": [
+                        "irmp send 2 817E 7E 0"
+                    ]
+                },
+                {
+                    "width": 70,
+                    "height": 50,
+                    "left": 100,
+                    "top": 20,
+                    "shape": "rounded",
+                    "icon": "",
+                    "label": "Off",
+                    "sends": [
+                        "irmp send 02 817E 7F 0"
+                    ]
+                },
+                {
+                    "width": 70,
+                    "height": 40,
+                    "left": 240,
+                    "top": 200,
+                    "shape": "rounded",
+                    "icon": "",
+                    "label": "Mute",
+                    "sends": [
+                        "irmp send 2 857A 1C 0"
+                    ]
+                },
+                {
+                    "width": 70,
+                    "height": 80,
+                    "left": 240,
+                    "top": 20,
+                    "shape": "rounded",
+                    "icon": "",
+                    "label": "Vol +",
+                    "sends": [
+                        "irmp send 2 857A 1A 0"
+                    ],
+                    "repeats": [
+                        "irmp send 2 857A 1A 1"
+                    ]
+                },
+                {
+                    "width": 70,
+                    "height": 80,
+                    "left": 240,
+                    "top": 110,
+                    "shape": "rounded",
+                    "icon": "",
+                    "label": "Vol -",
+                    "sends": [
+                        "irmp send 2 857A 1B 0"
+                    ],
+                    "repeats": [
+                        "irmp send 2 857A 1B 1"
+                    ]
+                },
+                {
+                    "width": 70,
+                    "height": 40,
+                    "left": 10,
+                    "top": 100,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "TV",
+                    "sends": [
+                        "irmp send 2 857A 54 0"
+                    ]
+                },
+                {
+                    "width": 70,
+                    "height": 40,
+                    "left": 100,
+                    "top": 100,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Airport",
+                    "sends": [
+                        "irmp send 2 857A C9 0"
+                    ]
+                },
+                {
+                    "width": 70,
+                    "height": 40,
+                    "left": 10,
+                    "top": 150,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "V-Aux",
+                    "sends": [
+                        "irmp send 2 857A 55 0"
+                    ]
+                },
+                {
+                    "width": 70,
+                    "height": 40,
+                    "left": 100,
+                    "top": 150,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "CD",
+                    "sends": [
+                        "irmp send 2 857A 15 0"
+                    ]
+                },
+                {
+                    "width": 70,
+                    "height": 40,
+                    "left": 10,
+                    "top": 200,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Tuner",
+                    "sends": [
+                        "irmp send 2 857A 16 0"
+                    ]
+                },
+                {
+                    "width": 70,
+                    "height": 40,
+                    "left": 100,
+                    "top": 200,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "DVR",
+                    "sends": [
+                        "irmp send 2 857A 13 0"
+                    ]
+                },
+                {
+                    "width": 105,
+                    "height": 40,
+                    "left": 10,
+                    "top": 290,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Movie",
+                    "sends": [
+                        "irmp send 2 857A 8B 0"
+                    ]
+                },
+                {
+                    "width": 105,
+                    "height": 40,
+                    "left": 125,
+                    "top": 290,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Stereo",
+                    "sends": [
+                        "irmp send 2 857A 94 0"
+                    ]
+                },
+                {
+                    "width": 105,
+                    "height": 40,
+                    "left": 10,
+                    "top": 340,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Entert.",
+                    "sends": [
+                        "irmp send 2 857A 8A 0"
+                    ]
+                },
+                {
+                    "width": 105,
+                    "height": 40,
+                    "left": 125,
+                    "top": 340,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Music",
+                    "sends": [
+                        "irmp send 2 857A 89 0"
+                    ]
+                },
+                {
+                    "width": 70,
+                    "height": 90,
+                    "left": 240,
+                    "top": 290,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Night",
+                    "sends": [
+                        "irmp send 2 857A 95 0"
+                    ]
+                }
+            ],
+            "labels": []
+        },
+        {
+            "name": "sony hx805",
+            "label": "TV",
+            "connection": "board",
+            "buttons": [
+                {
+                    "width": 50,
+                    "height": 40,
+                    "left": 10,
+                    "top": 10,
+                    "shape": "rect",
+                    "icon": "standby",
+                    "label": "",
+                    "sends": [
+                        "irmp send 1 0 95 0"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 40,
+                    "left": 70,
+                    "top": 10,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Home",
+                    "sends": [
+                        "irmp send 1 0 E0 0"
+                    ]
+                },
+                {
+                    "width": 80,
+                    "height": 40,
+                    "left": 140,
+                    "top": 10,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Ratio",
+                    "sends": [
+                        "irmp send 1 300 523D 0"
+                    ]
+                },
+                {
+                    "width": 80,
+                    "height": 40,
+                    "left": 230,
+                    "top": 10,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Source",
+                    "sends": [
+                        "irmp send 1 0 A5 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 80,
+                    "left": 190,
+                    "top": 70,
+                    "shape": "rounded",
+                    "icon": "",
+                    "label": "Vol +",
+                    "sends": [
+                        "irmp send 1 0 90 0"
+                    ],
+                    "repeats": [
+                        "irmp send 1 0 90 1"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 80,
+                    "left": 190,
+                    "top": 160,
+                    "shape": "rounded",
+                    "icon": "",
+                    "label": "Vol -",
+                    "sends": [
+                        "irmp send 1 0 91 0"
+                    ],
+                    "repeats": [
+                        "irmp send 1 0 91 1"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 80,
+                    "left": 250,
+                    "top": 70,
+                    "shape": "rounded",
+                    "icon": "",
+                    "label": "Prog +",
+                    "sends": [
+                        "irmp send 1 0 90 0"
+                    ],
+                    "repeats": [
+                        "irmp send 1 0 90 1"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 80,
+                    "left": 250,
+                    "top": 160,
+                    "shape": "rounded",
+                    "icon": "",
+                    "label": "Prog -",
+                    "sends": [
+                        "irmp send 1 0 91 0"
+                    ],
+                    "repeats": [
+                        "irmp send 1 0 91 1"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 70,
+                    "top": 70,
+                    "shape": "rect",
+                    "icon": "up",
+                    "label": "",
+                    "sends": [
+                        "irmp send 1 0 F4 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 70,
+                    "top": 190,
+                    "shape": "rect",
+                    "icon": "down",
+                    "label": "",
+                    "sends": [
+                        "irmp send 1 0 F5 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 130,
+                    "top": 130,
+                    "shape": "rect",
+                    "icon": "right",
+                    "label": "",
+                    "sends": [
+                        "irmp send 1 0 B3 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 10,
+                    "top": 130,
+                    "shape": "rect",
+                    "icon": "left",
+                    "label": "",
+                    "sends": [
+                        "irmp send 1 0 B4 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 10,
+                    "top": 190,
+                    "shape": "rect",
+                    "icon": "back",
+                    "label": "",
+                    "sends": [
+                        "irmp send 1 300 4BA3 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 70,
+                    "top": 130,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "OK",
+                    "sends": [
+                        "irmp send 1 0 E5 0"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 20,
+                    "left": 16,
+                    "top": 260,
+                    "shape": "rounded",
+                    "icon": "red",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 BB5 44A 0"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 20,
+                    "left": 92,
+                    "top": 260,
+                    "shape": "rounded",
+                    "icon": "green",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 75 F8A 0"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 20,
+                    "left": 168,
+                    "top": 260,
+                    "shape": "rounded",
+                    "icon": "yellow",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 675 98A 0"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 20,
+                    "left": 244,
+                    "top": 260,
+                    "shape": "rounded",
+                    "icon": "blue",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 FB5 4A 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 40,
+                    "left": 10,
+                    "top": 290,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "ARD",
+                    "sends": [
+                        "irmp send 1 0 80 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 40,
+                    "left": 70,
+                    "top": 290,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "ZDF",
+                    "sends": [
+                        "irmp send 1 0 81 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 40,
+                    "left": 130,
+                    "top": 290,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "RTL",
+                    "sends": [
+                        "irmp send 1 0 82 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 40,
+                    "left": 190,
+                    "top": 290,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "RTL2",
+                    "sends": [
+                        "irmp send 1 0 83 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 40,
+                    "left": 250,
+                    "top": 290,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "SAT1",
+                    "sends": [
+                        "irmp send 1 0 84 0"
+                    ]
+                },
+                {
+                    "width": 80,
+                    "height": 40,
+                    "left": 70,
+                    "top": 340,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Kabel 1",
+                    "sends": [
+                        "irmp send 1 0 85 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 40,
+                    "left": 10,
+                    "top": 340,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Pro7",
+                    "sends": [
+                        "irmp send 1 0 86 0"
+                    ]
+                },
+                {
+                    "width": 80,
+                    "height": 40,
+                    "left": 160,
+                    "top": 340,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Tele 5",
+                    "sends": [
+                        "irmp send 1 0 87 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 40,
+                    "left": 250,
+                    "top": 340,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Vox",
+                    "sends": [
+                        "irmp send 1 0 88 0"
+                    ]
+                }
+            ],
+            "labels": []
+        },
+        {
+            "name": "xBox",
+            "label": "xBox",
+            "connection": "board",
+            "buttons": [
+                {
+                    "width": 70,
+                    "height": 40,
+                    "left": 20,
+                    "top": 20,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "On",
+                    "sends": [
+                        "irmp send 4 75 F8A 0",
+                        "irmp send 4 D05 2FA 0"
+                    ]
+                },
+                {
+                    "width": 70,
+                    "height": 40,
+                    "left": 110,
+                    "top": 20,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Off",
+                    "sends": [
+                        "irmp send 4 75 F8A 0",
+                        "irmp send 4 D05 2FA 0"
+                    ]
+                },
+                {
+                    "width": 100,
+                    "height": 40,
+                    "left": 200,
+                    "top": 20,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "Display",
+                    "sends": [
+                        "irmp send 4 75 F8A 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 135,
+                    "top": 90,
+                    "shape": "rect",
+                    "icon": "up",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 655 9AA 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 135,
+                    "top": 210,
+                    "shape": "rect",
+                    "icon": "down",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 E55 1AA 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 195,
+                    "top": 150,
+                    "shape": "rect",
+                    "icon": "right",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 155 EAA 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 75,
+                    "top": 150,
+                    "shape": "rect",
+                    "icon": "left",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 955 6AA 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 135,
+                    "top": 150,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "OK",
+                    "sends": [
+                        "irmp send 4 D05 2FA 0"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 40,
+                    "left": 16,
+                    "top": 340,
+                    "shape": "rounded",
+                    "icon": "previous",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 BB5 44A 0"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 40,
+                    "left": 92,
+                    "top": 340,
+                    "shape": "rounded",
+                    "icon": "stop",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 75 F8A 0"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 40,
+                    "left": 168,
+                    "top": 340,
+                    "shape": "rounded",
+                    "icon": "pause",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 675 98A 0"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 40,
+                    "left": 244,
+                    "top": 340,
+                    "shape": "rounded",
+                    "icon": "next",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 FB5 4A 0"
+                    ]
+                },
+                {
+                    "width": 80,
+                    "height": 40,
+                    "left": 20,
+                    "top": 290,
+                    "shape": "rounded",
+                    "icon": "reverse",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 1B5 E4A 0"
+                    ]
+                },
+                {
+                    "width": 80,
+                    "height": 40,
+                    "left": 115,
+                    "top": 290,
+                    "shape": "rounded",
+                    "icon": "play",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 1B5 E4A 0"
+                    ]
+                },
+                {
+                    "width": 80,
+                    "height": 40,
+                    "left": 210,
+                    "top": 290,
+                    "shape": "rounded",
+                    "icon": "forward",
+                    "label": "",
+                    "sends": [
+                        "irmp send 4 1B5 E4A 0"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 50,
+                    "left": 20,
+                    "top": 220,
+                    "shape": "circle",
+                    "icon": "",
+                    "label": "Menu",
+                    "sends": [
+                        "irmp send 4 EF5 10A 0"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 50,
+                    "left": 240,
+                    "top": 220,
+                    "shape": "circle",
+                    "icon": "",
+                    "label": "Back",
+                    "sends": [
+                        "irmp send 4 1B5 E4A 0"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 50,
+                    "left": 20,
+                    "top": 85,
+                    "shape": "circle",
+                    "icon": "",
+                    "label": "Title",
+                    "sends": [
+                        "irmp send 4 1B5 E4A 0"
+                    ]
+                },
+                {
+                    "width": 60,
+                    "height": 50,
+                    "left": 240,
+                    "top": 85,
+                    "shape": "circle",
+                    "icon": "",
+                    "label": "Info",
+                    "sends": [
+                        "irmp send 4 1B5 E4A 0"
+                    ]
+                }
+            ],
+            "labels": []
+        },
+        {
+            "name": "Apple Remote Control",
+            "label": "Mac",
+            "connection": "board",
+            "buttons": [
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 135,
+                    "top": 90,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "+",
+                    "sends": [
+                        "irmp send 11 2F A 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 135,
+                    "top": 210,
+                    "shape": "rect",
+                    "icon": "",
+                    "label": "-",
+                    "sends": [
+                        "irmp send 11 2F C 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 195,
+                    "top": 150,
+                    "shape": "rect",
+                    "icon": "next",
+                    "label": "",
+                    "sends": [
+                        "irmp send 11 2F 6 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 75,
+                    "top": 150,
+                    "shape": "rect",
+                    "icon": "previous",
+                    "label": "",
+                    "sends": [
+                        "irmp send 11 2F 9 0"
+                    ]
+                },
+                {
+                    "width": 50,
+                    "height": 50,
+                    "left": 135,
+                    "top": 150,
+                    "shape": "rect",
+                    "icon": "play",
+                    "label": "",
+                    "sends": [
+                        "irmp send 11 2F 5 0"
+                    ]
+                },
+                {
+                    "width": 90,
+                    "height": 40,
+                    "left": 115,
+                    "top": 290,
+                    "shape": "rounded",
+                    "icon": "",
+                    "label": "Menu",
+                    "sends": [
+                        "irmp send 11 2F 3 0"
+                    ]
+                }
+            ],
+            "labels": []
+        }
+    ],
+    "configuration_ipad": {
+        "orientation": "landscape",
+        "connection": "board",
+        "buttons": [
+            {
+                "width": 90,
+                "height": 46,
+                "left": 320,
+                "top": 80,
+                "shape": "rounded",
+                "icon": "lamp_on",
+                "label": "",
+                "sends": [
+                    "rfm12 2272 0,5,81 76 3"
+                ]
+            },
+            {
+                "width": 90,
+                "height": 46,
+                "left": 410,
+                "top": 80,
+                "shape": "rounded",
+                "icon": "lamp_off",
+                "label": "",
+                "sends": [
+                    "rfm12 2272 0,5,80 76 3"
+                ]
+            },
+            {
+                "width": 90,
+                "height": 46,
+                "top": 635,
+                "left": 140,
+                "shape": "rounded",
+                "icon": "lamp_on",
+                "label": "",
+                "sends": [
+                    "rfm12 2272 0,17,81 76 3"
+                ]
+            },
+            {
+                "width": 90,
+                "height": 46,
+                "top": 585,
+                "left": 140,
+                "shape": "rounded",
+                "icon": "lamp_off",
+                "label": "",
+                "sends": [
+                    "rfm12 2272 0,17,80 76 3"
+                ]
+            },
+            {
+                "width": 90,
+                "height": 46,
+                "top": 640,
+                "left": 330,
+                "shape": "rounded",
+                "icon": "lamp_on",
+                "label": "",
+                "sends": [
+                    "rfm12 2272 0,20,81 76 3"
+                ]
+            },
+            {
+                "width": 90,
+                "height": 46,
+                "top": 640,
+                "left": 420,
+                "shape": "rounded",
+                "icon": "lamp_off",
+                "label": "",
+                "sends": [
+                    "rfm12 2272 0,20,80 76 3"
+                ]
+            },
+            {
+                "width": 90,
+                "height": 46,
+                "top": 480,
+                "left": 810,
+                "shape": "rounded",
+                "icon": "lamp_on",
+                "label": "",
+                "sends": [
+                    "rfm12 2272 0,21,17 76 3"
+                ]
+            },
+            {
+                "width": 90,
+                "height": 46,
+                "top": 430,
+                "left": 810,
+                "shape": "rounded",
+                "icon": "lamp_off",
+                "label": "",
+                "sends": [
+                    "rfm12 2272 0,21,16 76 3"
+                ]
+            },
+            {
+                "width": 130,
+                "height": 46,
+                "top": 340,
+                "left": 480,
+                "shape": "rounded",
+                "icon": "",
+                "label": "All On",
+                "sends": [
+                    "rfm12 2272 0,5,81 76 3",
+                    "rfm12 2272 0,17,81 76 3",
+                    "rfm12 2272 0,20,81 76 3",
+                    "rfm12 2272 0,21,17 76 3"
+                ]
+            },
+            {
+                "width": 130,
+                "height": 46,
+                "top": 340,
+                "left": 610,
+                "shape": "rounded",
+                "icon": "",
+                "label": "All Off",
+                "sends": [
+                    "rfm12 2272 0,5,80 76 3",
+                    "rfm12 2272 0,17,80 76 3",
+                    "rfm12 2272 0,20,80 76 3",
+                    "rfm12 2272 0,21,16 76 3"
+                ]
+            }
+        ],
+        "labels": [
+            {
+                "width": 160,
+                "height": 30,
+                "top": 10,
+                "left": 10,
+                "text": "Temperature:",
+                "icon": ""
+            },
+            {
+                "width": 160,
+                "height": 30,
+                "top": 10,
+                "left": 110,
+                "text": "",
+                "icon": "",
+                "sends": [
+                    "1w convert"
+                ],
+                "reads": "1w get 10c3e6db01080033",
+                "interval": 5000
+            }
+        ]
+    }
+}

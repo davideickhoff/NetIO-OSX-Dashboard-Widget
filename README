@@ -1,0 +1,21 @@
+This project is based on the iPhone Application NetIO Controller ( http://itunes.apple.com/app/netio/id464924297?mt=8 ) which uses a JSON structure to build a custom remote control for Arduino Boards, AVR-Net-IO Boards or other Hardware devices which are able to receive simple strings. 
+
+This widget takes such a configuration and builds a working user interface into your dashboard!
+
+More information about the configuration and the app (with demo video) can be found at http://netio.davideickhoff.de
+
+The project is a very basic implementation and needs to be improved. Feel free to checkout and edit!
+
+Installation:
+- checkout repository
+- change the hardcoded IP and Port (JSON connection settings are not used for now)
+- build the widget with Dashcode
+- add it to your dashboard
+- set the path to your json file in the widget preferences (click on the small i-icon on the bottom right)
+
+TODO:
+- render labels
+- use json connection settings
+- fix image stretching
+- use whole sends-array (currently just the first is being sent)
+- implement reads functionality
