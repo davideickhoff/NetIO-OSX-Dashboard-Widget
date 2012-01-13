@@ -102,3 +102,9 @@
     top: 0px;
     left: 0px;
 }
+
+.label {
+    position: absolute;
+    text-align: center;
+    color : #fff;
+}

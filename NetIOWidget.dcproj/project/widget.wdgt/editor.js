@@ -14,8 +14,10 @@ render = function(json) {
         canvas.append(page_button)
         page_div = $("<div class='page' id='page_"+String(index)+"'></div>");
         var button_index = 0;
-        $.each(page["buttons"], function(index, button) { 
+        $.each(page["items"], function(index, button) { 
             dimensions = "left:"+button["left"]+"px; top:"+button["top"]+"px; width:"+button["width"]+"px; height:"+button["height"]+"px;";
+
+            if (button["type"]=="button") {
             button_div = $("<div class='button' style='"+dimensions+" line-height:"+button["height"]+"px;' p_index="+page_index+" b_index="+button_index+"><div>");
             button_div.append("<img class='button_bg_image' style='width:"+button["width"]+"px; height:"+button["height"]+"px;' src='Images/shape_"+button["shape"]+"_btn.png' alt=''/>");
             button_div.append("<div class='button_label' style='width:"+button["width"]+"px; height:"+button["height"]+"px;'>"+button["label"]+"</div>");
@@ -26,16 +28,22 @@ render = function(json) {
             
             
             button_div.mouseup(function(){
-                button_json = json["configuration_iphone"][parseInt($(this).attr("p_index"))]["buttons"][parseInt($(this).attr("b_index"))];
+                button_json = json["configuration_iphone"][parseInt($(this).attr("p_index"))]["items"][parseInt($(this).attr("b_index"))];
                 $(this).find(".button_bg_image").attr("src","Images/shape_"+button_json["shape"]+"_btn.png");
                 send(button_json["sends"][0]);
             }).mousedown(function(){
-                button_json = json["configuration_iphone"][parseInt($(this).attr("p_index"))]["buttons"][parseInt($(this).attr("b_index"))];
+                button_json = json["configuration_iphone"][parseInt($(this).attr("p_index"))]["items"][parseInt($(this).attr("b_index"))];
                 $(this).find(".button_bg_image").attr("src","Images/shape_"+button_json["shape"]+"_btn_pressed.png");
             });
+                        page_div.append(button_div);
 
+            } else if (button["type"]=="label") {
+                item = button;
+                item_div = $("<div class='label' style='"+dimensions+" line-height:"+item["height"]+"px;' p_index="+page_index+" b_index="+button_index+"><div>");
+                item_div.append("<div class='label_text' style='width:"+button["width"]+"px; height:"+item["height"]+"px;'>"+item["text"]+"</div>");
+                page_div.append(item_div);
+            }
             
-            page_div.append(button_div);
             button_index = button_index + 1;
         });
         page_index = page_index + 1;
