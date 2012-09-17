@@ -21,7 +21,7 @@ render = function(json) {
 
             if (button["type"]=="button") {
             button_div = $("<div class='button shape_"+button["shape"]+"' style='"+dimensions+" line-height:"+button["height"]+"px;' p_index="+page_index+" b_index="+button_index+"><div>");
-            button_div.append("<div class='button_label' style='width:"+button["width"]+"px; height:"+button["height"]+"px;'>"+button["label"]+"</div>");
+            button_div.append("<div class='button_label' style='width:"+button["width"]+"px; height:"+button["height"]+"px; color:rgb("+button["textcolor"]+");'>"+button["label"]+"</div>");
             if(button["icon"]!="")
             {
                 button_div.append("<img class='button_icon_image' style='height:"+button["height"]*0.45+"px; margin-top:"+button["height"]*0.255+"px;' src='Images/icon_"+button["icon"]+".png' alt=''/>"); 
@@ -38,7 +38,7 @@ render = function(json) {
             } else if (button["type"]=="label") {
                 item = button;
                 item_div = $("<div class='label' style='"+dimensions+" line-height:"+item["height"]+"px;' p_index="+page_index+" b_index="+button_index+"><div>");
-                item_div.append("<div class='label_text' style='width:"+button["width"]+"px; height:"+item["height"]+"px;'>"+item["text"]+"</div>");
+                item_div.append("<div class='label_text' style='width:"+button["width"]+"px; height:"+item["height"]+"px; color:rgb("+button["textcolor"]+");'>"+item["text"]+"</div>");
                 page_div.append(item_div);
             }
             

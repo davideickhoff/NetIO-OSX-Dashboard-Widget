@@ -11,11 +11,11 @@ Installation:
 - change the hardcoded IP and Port (JSON connection settings are not used for now)
 - build the widget with Dashcode
 - add it to your dashboard
+- (in Mountain Lion you may need to reload (command+r) the widget to work properly)
 - set the path to your json file in the widget preferences (click on the small i-icon on the bottom right)
 
 TODO:
-- render labels
-- use json connection settings
-- fix image stretching
+- handle multiple connections
 - use whole sends-array (currently just the first is being sent)
 - implement reads functionality
+- implement sliders and switched
