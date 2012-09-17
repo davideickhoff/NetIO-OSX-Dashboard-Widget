@@ -5,7 +5,7 @@
 	<key>Breakpoints</key>
 	<dict/>
 	<key>CYLastWindowPosition</key>
-	<string>{648, 21}</string>
+	<string>{1398, 388}</string>
 	<key>ContentSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -21,19 +21,23 @@
 		</array>
 	</dict>
 	<key>ContentViewType</key>
-	<integer>5</integer>
+	<integer>0</integer>
 	<key>DeploymentOptions</key>
 	<dict>
+		<key>CompressJavaScript</key>
+		<false/>
 		<key>Destination</key>
-		<string>aos.default</string>
+		<string>localhost.default</string>
 		<key>EmailToNotifyAddress</key>
 		<string>dm.eickhoff@gmail.com</string>
 		<key>Save</key>
 		<true/>
+		<key>SavePath</key>
+		<string>/Users/David/Desktop</string>
 		<key>enableSimulation</key>
 		<true/>
 		<key>simulatedHost</key>
-		<string>web.me.com</string>
+		<string>davidmbp.local</string>
 	</dict>
 	<key>Design time language</key>
 	<string>en.lproj</string>
@@ -95,11 +99,7 @@
 			</array>
 		</array>
 		<key>Objects view last selections</key>
-		<array>
-			<array>
-				<integer>5</integer>
-			</array>
-		</array>
+		<array/>
 		<key>Visible StackLayout Views</key>
 		<array>
 			<string>back</string>

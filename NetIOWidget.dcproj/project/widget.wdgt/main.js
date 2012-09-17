@@ -4,6 +4,7 @@
  according to the license.txt file included in the project.
  */
 
+var json = null;
 
 //
 // Function: load()
@@ -139,7 +140,7 @@ function reload()
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState==4) {
 
-            var json = parseJSON(xmlhttp.responseText); 
+            json = parseJSON(xmlhttp.responseText); 
             if(json) { 
                 render(json); 
             }
@@ -155,9 +156,9 @@ function responseHandler()
 
 function send(ecmd_command)
 {
-    var ip = "192.168.0.90";                          // reading the IP from the IP textfield on the back
-    var port = "2701";                      // reading the Port from the Port textfield on the back
-    
+    var ip = json.connections[0].host;                          // reading the IP from the IP textfield on the back
+    var port = json.connections[0].port;                      // reading the Port from the Port textfield on the back
+
     widget.system("/bin/echo '!"+ecmd_command+"' | /usr/bin/nc "+ip+" "+port, responseHandler);
 }
 

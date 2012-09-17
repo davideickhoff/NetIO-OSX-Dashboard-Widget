@@ -42,12 +42,21 @@
     height: 460px;
 }
 
+#page-buttons {
+    position: absolute; 
+    top: 0px; 
+    left: 0px;
+    height: 65px;
+    width: 320px;
+    overflow: scroll;
+}
+
 
 .page_button {
     height: 62px;
-    width: 62px;
-    position: absolute;
-    /*background-color: #ccc;*/
+    width: 60px;
+    font-size: 14px;
+    /*padding: 8px 14px 9px;*/
 }
 
 .page_button_background
@@ -82,8 +91,32 @@
 .button {
     position: absolute;
     text-align: center;
-    /*border : 1px solid #aaa; */
+    display: inline-block;
+    /*padding: 5px 10px 6px;*/
+    color: white;
+    text-decoration: none;
+    -webkit-box-shadow: 1px 1px 0px #202020, -1px -1px 0px #555;/* 0 1px 3px rgba(0, 0, 0, 0.5);
+    /*-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #000; */
+
+    /*background-image: -webkit-gradient(
+        linear,
+        left bottom,
+	left top,
+	color-stop(0.38, rgb(36,36,36)),
+	color-stop(0.69, rgb(84,84,84)));*/
+    background-image: -webkit-linear-gradient(rgb(74,74,74), rgb(46,46,46));
+
 }
+
+.shape_rect {
+    -webkit-border-radius: 0px;
+}
+
+.shape_rounded {
+    -webkit-border-radius: 5px;
+}
+
 
 .button_bg_image {
     position: absolute;
@@ -108,3 +141,4 @@
     text-align: center;
     color : #fff;
 }
+
